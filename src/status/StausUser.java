@@ -13,25 +13,38 @@ enum user {zero,one,two,three};
 
 public class StausUser 
 {
-   public void statusDetail(String code)
+    public String  x;
+   String  statusDetail(String x  )
 {
-    user v = user.valueOf(code.toUpperCase());
- switch(v)
+    user v = user.valueOf(x.toUpperCase());
+ switch(x.toUpperCase())
         {
-        case ZERO : ;
+        case "ZERO" : 
+            return "REJECTED";
         break;
-        case ONE : System.out.println("PENDING");
+        case "ONE" : 
+            return ("PENDING");
         break;
-        case TWO :
-        System.out.println("PROCESSING");
+        case "TWO" :
+        return ("PROCESSING");
         break;
-        case THREE: 
-            System.out.println("APPROVED");
+        case "THREE": 
+            return ("APPROVED");
         break;
         default:
-         System.out.println("NOT VALID CODE");
+        throw new AssertionError("NOT VALID CODE");
         break;
         }
+        return null;
+      
 }
  
 }
+
+
+
+
+
+
+
+ 
