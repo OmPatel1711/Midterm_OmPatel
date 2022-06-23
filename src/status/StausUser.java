@@ -19,16 +19,16 @@ public class StausUser
     user v = user.valueOf(x.toUpperCase());
  switch(x.toUpperCase())
         {
-        case "ZERO" : 
+        case ZERO : 
             return "REJECTED";
         break;
-        case "ONE" : 
+        case ONE : 
             return ("PENDING");
         break;
-        case "TWO" :
+        case TWO :
         return ("PROCESSING");
         break;
-        case "THREE": 
+        case THREE: 
             return ("APPROVED");
         break;
         default:
