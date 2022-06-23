@@ -28,6 +28,7 @@ public class Status {
     String code = in.next();
     StausUser t= new StausUser();
     t.statusDetail(code); 
+    
     }
     
 }
